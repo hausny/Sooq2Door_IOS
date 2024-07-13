@@ -1,0 +1,15 @@
+D:\project vs 2023\Sooq2Door\Sooq2Door\bin\Release\netstandard2.0\Sooq2Door.deps.json
+D:\project vs 2023\Sooq2Door\Sooq2Door\bin\Release\netstandard2.0\Sooq2Door.dll
+D:\project vs 2023\Sooq2Door\Sooq2Door\bin\Release\netstandard2.0\ref\Sooq2Door.dll
+D:\project vs 2023\Sooq2Door\Sooq2Door\bin\Release\netstandard2.0\Sooq2Door.pdb
+D:\project vs 2023\Sooq2Door\Sooq2Door\obj\Release\netstandard2.0\Sooq2Door.csproj.AssemblyReference.cache
+D:\project vs 2023\Sooq2Door\Sooq2Door\obj\Release\netstandard2.0\Sooq2Door.GeneratedMSBuildEditorConfig.editorconfig
+D:\project vs 2023\Sooq2Door\Sooq2Door\obj\Release\netstandard2.0\App.xaml.g.cs
+D:\project vs 2023\Sooq2Door\Sooq2Door\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+D:\project vs 2023\Sooq2Door\Sooq2Door\obj\Release\netstandard2.0\Sooq2Door.AssemblyInfoInputs.cache
+D:\project vs 2023\Sooq2Door\Sooq2Door\obj\Release\netstandard2.0\Sooq2Door.AssemblyInfo.cs
+D:\project vs 2023\Sooq2Door\Sooq2Door\obj\Release\netstandard2.0\Sooq2Door.csproj.CoreCompileInputs.cache
+D:\project vs 2023\Sooq2Door\Sooq2Door\obj\Release\netstandard2.0\XamlC.stamp
+D:\project vs 2023\Sooq2Door\Sooq2Door\obj\Release\netstandard2.0\Sooq2Door.dll
+D:\project vs 2023\Sooq2Door\Sooq2Door\obj\Release\netstandard2.0\refint\Sooq2Door.dll
+D:\project vs 2023\Sooq2Door\Sooq2Door\obj\Release\netstandard2.0\Sooq2Door.pdb
