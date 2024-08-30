@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using WebKit;
 
 namespace Sooq2Door.iOS
 {
@@ -23,7 +24,16 @@ namespace Sooq2Door.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+            var config = new WKWebViewConfiguration
+            {
+                WebsiteDataStore = WKWebsiteDataStore.DefaultDataStore
+            };
+
+            // Create your WKWebView with the configuration
+            WKWebView webView = new WKWebView(UIScreen.MainScreen.Bounds, config);
             LoadApplication(new App());
+
 
             return base.FinishedLaunching(app, options);
         }

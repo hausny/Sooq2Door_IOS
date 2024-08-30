@@ -1,3 +1,5 @@
 is_global = true
 build_property.RootNamespace = Sooq2Door
 build_property.ProjectDir = D:\project vs 2023\Sooq2Door\Sooq2Door\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

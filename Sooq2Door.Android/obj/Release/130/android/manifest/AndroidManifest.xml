@@ -5,17 +5,28 @@
     Changes to this file may cause incorrect behavior and will be lost if
     the contents are regenerated.
 -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.companyname.sooq2door" android:installLocation="auto" android:versionCode="3" android:versionName="1.1">
-  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="33" />
-  <uses-permission android:name="android.permission.INTERNET" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.companyname.sooq2door" android:installLocation="auto" android:versionCode="14" android:versionName="1.1">
+  <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="34" />
+  <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-feature android:name="android.hardware.camera" android:required="false" />
+  <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+  <uses-feature android:name="android.hardware.telephony" android:required="false" />
+  <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+  <uses-feature android:name="android.hardware.wifi" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+  <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+  <!-- Required permissions -->
+  <!-- Optional features to ensure broad compatibility -->
   <queries>
     <intent>
       <action android:name="android.media.browse.MediaBrowserService" />
     </intent>
   </queries>
-  <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:icon="@mipmap/icon" android:label="Sooq2Door.Android" android:theme="@style/MainTheme">
+  <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:icon="@mipmap/icon" android:label="Sooq2Door" android:theme="@style/MainTheme">
+    <!-- Add your activities and other components here -->
     <activity android:name="crc640943e3135a24043a.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:exported="true" android:icon="@mipmap/icon" android:label="Sooq2Door" android:theme="@style/MainTheme">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

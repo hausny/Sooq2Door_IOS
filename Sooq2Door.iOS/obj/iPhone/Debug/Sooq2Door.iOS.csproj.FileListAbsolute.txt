@@ -58,6 +58,6 @@ D:\project vs 2023\Sooq2Door\Sooq2Door.iOS\obj\iPhone\Debug\_ProcessedContentPat
 D:\project vs 2023\Sooq2Door\Sooq2Door.iOS\obj\iPhone\Debug\optimized\
 D:\project vs 2023\Sooq2Door\Sooq2Door.iOS\obj\iPhone\Debug\Sooq2Door.iOS.csproj.AssemblyReference.cache
 D:\project vs 2023\Sooq2Door\Sooq2Door.iOS\obj\iPhone\Debug\Sooq2Door.iOS.csproj.CoreCompileInputs.cache
-D:\project vs 2023\Sooq2Door\Sooq2Door.iOS\obj\iPhone\Debug\Sooq2Door.iOS.csproj.CopyComplete
 D:\project vs 2023\Sooq2Door\Sooq2Door.iOS\obj\iPhone\Debug\Sooq2Door.iOS.exe
 D:\project vs 2023\Sooq2Door\Sooq2Door.iOS\obj\iPhone\Debug\Sooq2Door.iOS.pdb
+D:\project vs 2023\Sooq2Door\Sooq2Door.iOS\obj\iPhone\Debug\Sooq2Doo.2E6DDA15.Up2Date

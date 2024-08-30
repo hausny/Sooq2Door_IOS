@@ -1,3 +1,6 @@
+Sooq2Door.Droid.CustomWebViewRenderer, Sooq2Door.Android;crc640943e3135a24043a.CustomWebViewRenderer
+Sooq2Door.Droid.CustomWebViewRenderer;crc640943e3135a24043a.CustomWebViewRenderer
+sooq2door.droid.CustomWebViewRenderer;crc640943e3135a24043a.CustomWebViewRenderer
 Sooq2Door.Droid.MainActivity, Sooq2Door.Android;crc640943e3135a24043a.MainActivity
 Sooq2Door.Droid.MainActivity;crc640943e3135a24043a.MainActivity
 sooq2door.droid.MainActivity;crc640943e3135a24043a.MainActivity

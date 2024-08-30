@@ -4,6 +4,7 @@ using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
+using Android.Webkit;
 
 namespace Sooq2Door.Droid
 {
@@ -13,6 +14,11 @@ namespace Sooq2Door.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            var cookieManager = CookieManager.Instance;
+            cookieManager.SetAcceptCookie(true);
+            cookieManager.SetAcceptThirdPartyCookies(new WebView(this), true); // This creates a new WebView instance
+
+
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);

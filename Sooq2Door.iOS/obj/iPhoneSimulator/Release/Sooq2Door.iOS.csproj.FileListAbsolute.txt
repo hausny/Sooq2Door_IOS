@@ -57,5 +57,5 @@ D:\project vs 2023\Sooq2Door\Sooq2Door.iOS\obj\iPhoneSimulator\Release\_Processe
 D:\project vs 2023\Sooq2Door\Sooq2Door.iOS\obj\iPhoneSimulator\Release\optimized\
 D:\project vs 2023\Sooq2Door\Sooq2Door.iOS\obj\iPhoneSimulator\Release\Sooq2Door.iOS.csproj.AssemblyReference.cache
 D:\project vs 2023\Sooq2Door\Sooq2Door.iOS\obj\iPhoneSimulator\Release\Sooq2Door.iOS.csproj.CoreCompileInputs.cache
-D:\project vs 2023\Sooq2Door\Sooq2Door.iOS\obj\iPhoneSimulator\Release\Sooq2Door.iOS.csproj.CopyComplete
+D:\project vs 2023\Sooq2Door\Sooq2Door.iOS\obj\iPhoneSimulator\Release\Sooq2Doo.2E6DDA15.Up2Date
 D:\project vs 2023\Sooq2Door\Sooq2Door.iOS\obj\iPhoneSimulator\Release\Sooq2Door.iOS.exe

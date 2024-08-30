@@ -41,7 +41,6 @@ D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Debug\130\lp\103\jl\files.cac
 D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Debug\130\R.txt
 D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Debug\130\R.cs.flag
 D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Debug\130\Sooq2Door.Android.csproj.CoreCompileInputs.cache
-D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Debug\130\Sooq2Door.Android.csproj.CopyComplete
 D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Debug\130\Sooq2Door.Android.dll
 D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Debug\130\Sooq2Door.Android.pdb
 D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Debug\130\android\bin\com.companyname.sooq2door.apk
@@ -636,3 +635,6 @@ D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Debug\130\stamp\_ConvertResou
 D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Debug\130\stamp\_GenerateJavaStubs.stamp
 D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
+D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Debug\130\Sooq2Doo.8FA245ED.Up2Date
+D:\project vs 2023\Sooq2Door\Sooq2Door.Android\bin\Debug\mapping.txt
+D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Debug\130\android\src\crc640943e3135a24043a\CustomWebViewRenderer.java

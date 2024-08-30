@@ -1,11 +1,163 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Sooq2Door.MainPage">
+              xmlns:local="clr-namespace:Sooq2Door"
+             x:Class="Sooq2Door.MainPage"
+             BackgroundColor="White">
 
     <ContentPage.Content>
-        <WebView x:Name="webView"
-                 VerticalOptions="FillAndExpand"
-                 HorizontalOptions="FillAndExpand"/>
+        <Grid>
+            <!-- Define two rows: one for the WebView, one for the menu -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <!-- WebView occupies the remaining space -->
+                <RowDefinition Height="Auto" />
+                <!-- Menu bar takes the space it needs -->
+            </Grid.RowDefinitions>
+
+            <!-- WebView to display web content -->
+            <local:CustomWebView x:Name="webView"
+                     Grid.Row="0"
+                     VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand"
+                     Navigating="OnWebViewNavigating"
+                     Navigated="OnWebViewNavigated">
+                <!-- Gesture Recognizers for Swipe Navigation -->
+                <WebView.GestureRecognizers>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwipeRight" />
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwipeLeft" />
+                </WebView.GestureRecognizers>
+            </local:CustomWebView>
+
+            <!-- Responsive Bottom menu bar with FlexLayout -->
+            <FlexLayout x:Name="bottomToolbar"
+                        Grid.Row="1"
+                        BackgroundColor="White"
+                        Padding="5, 0"
+                        AlignItems="Center"
+                        JustifyContent="SpaceBetween"
+                        VerticalOptions="End"
+                        HeightRequest="50">
+                <!-- Cart Icon and Label -->
+                <StackLayout VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             Spacing="0"
+                             Padding="0"
+                             Orientation="Vertical">
+                    <ImageButton x:Name="homeButton"
+                                 Source="https://storage.googleapis.com/sooq2door-bucket/home_16dp_FF5E3B_FILL0_wght400_GRAD0_opsz20.png"
+                                 BackgroundColor="Transparent"
+                                 Clicked="OnButtonClicked"
+                                 Aspect="AspectFit"
+                                 HeightRequest="35"     
+                                 WidthRequest="30" />
+                    <Label x:Name="homeLabel"
+                           Text="Home"
+                           FontSize="10"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Black" />
+                </StackLayout>
+                <StackLayout VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             Spacing="0"
+                             Padding="0"
+                             Orientation="Vertical">
+                    <ImageButton x:Name="cartButton"
+                                 Source="https://storage.googleapis.com/sooq2door-bucket/shopping_cart_16dp_FF5E3B_FILL0_wght400_GRAD0_opsz20.png"
+                                 BackgroundColor="Transparent"
+                                 Clicked="OnButtonClicked"
+                                 Aspect="AspectFit"
+                                 HeightRequest="35"     
+                                 WidthRequest="30" />
+                    <Label x:Name="cartLabel"
+                           Text="Cart"
+                           FontSize="10"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Black" />
+                </StackLayout>
+
+                <!-- All Products Icon and Label -->
+                <StackLayout VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             Spacing="0"
+                             Padding="0"
+                             Orientation="Vertical">
+                    <ImageButton x:Name="allProductsButton"
+                                 Source="https://storage.googleapis.com/sooq2door-bucket/list_16dp_FF5E3B_FILL0_wght400_GRAD0_opsz20.png"
+                                 BackgroundColor="Transparent"
+                                 Clicked="OnButtonClicked"
+                                 Aspect="AspectFit"
+                                 HeightRequest="35"     
+                                 WidthRequest="30" />
+                    <Label x:Name="allProductsLabel"
+                           Text="All Products"
+                           FontSize="10"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Black" />
+                </StackLayout>
+
+                <!-- Vegetables Icon and Label -->
+                <StackLayout VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             Spacing="0"
+                             Padding="0"
+                             Orientation="Vertical">
+                    <ImageButton x:Name="vegetablesButton"
+                                 Source="https://storage.googleapis.com/sooq2door-bucket/spa_16dp_FF5E3B_FILL0_wght400_GRAD0_opsz20.png"
+                                 BackgroundColor="Transparent"
+                                 Clicked="OnButtonClicked"
+                                 Aspect="AspectFit"
+                                 HeightRequest="35"     
+                                 WidthRequest="30" />
+                    <Label x:Name="vegetablesLabel"
+                           Text="Vegetables"
+                           FontSize="10"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Black" />
+                </StackLayout>
+
+                <!-- Fruits Icon and Label -->
+                <StackLayout VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             Spacing="0"
+                             Padding="0"
+                             Orientation="Vertical">
+                    <ImageButton x:Name="fruitsButton"
+                                 Source="https://storage.googleapis.com/sooq2door-bucket/local_florist_16dp_FF5E3B_FILL0_wght400_GRAD0_opsz20.png"
+                                 BackgroundColor="Transparent"
+                                 Clicked="OnButtonClicked"
+                                 Aspect="AspectFit"
+                                 HeightRequest="35"     
+                                 WidthRequest="30" />
+                    <Label x:Name="fruitsLabel"
+                           Text="Fruits"
+                           FontSize="10"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Black" />
+                </StackLayout>
+
+                <!-- Back Icon and Label -->
+                <StackLayout VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             Spacing="0"
+                             Padding="0"
+                             Orientation="Vertical">
+                    <ImageButton x:Name="backButton"
+                                 Source="https://storage.googleapis.com/sooq2door-bucket/arrow_back_22dp_FF5E3B_FILL0_wght400_GRAD0_opsz24.png"
+                                 BackgroundColor="Transparent"
+                                 Clicked="OnButtonClicked"
+                                 Aspect="AspectFit"
+                                 HeightRequest="40"     
+                                 WidthRequest="30"
+                                 IsVisible="False" />
+                    <Label x:Name="backLabel"
+                           Text="Back"
+                           FontSize="10"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Black" />
+                </StackLayout>
+                
+            </FlexLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

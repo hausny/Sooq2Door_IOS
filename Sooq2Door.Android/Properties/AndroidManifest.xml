@@ -1,6 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="3" android:versionName="1.1" package="com.companyname.sooq2door" android:installLocation="auto">
-	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="33" />
-	<application android:label="Sooq2Door.Android" android:theme="@style/MainTheme"></application>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.companyname.sooq2door" android:versionCode="14" android:versionName="1.1" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="34" />
+	<supports-screens android:resizeable="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
+	<application android:label="Sooq2Door" android:theme="@style/MainTheme">
+		<!-- Add your activities and other components here -->
+	</application>
+	<!-- Required permissions -->
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<!-- Optional features to ensure broad compatibility -->
+	<uses-feature android:name="android.hardware.camera" android:required="false" />
+	<uses-feature android:name="android.hardware.location.gps" android:required="false" />
+	<uses-feature android:name="android.hardware.telephony" android:required="false" />
+	<uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+	<uses-feature android:name="android.hardware.wifi" android:required="false" />
+	<uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+	<uses-feature android:glEsVersion="0x00020000" android:required="true" />
 </manifest>

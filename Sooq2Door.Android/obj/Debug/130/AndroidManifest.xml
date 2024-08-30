@@ -5,12 +5,21 @@
     Changes to this file may cause incorrect behavior and will be lost if
     the contents are regenerated.
     -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.sooq2door">
-  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="33" />
-  <uses-permission android:name="android.permission.INTERNET" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.companyname.sooq2door" android:versionCode="14" android:versionName="1.1" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="34" />
+  <supports-screens android:resizeable="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-  <application android:label="Sooq2Door.Android" android:theme="@style/MainTheme" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true" android:extractNativeLibs="true">
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-feature android:name="android.hardware.camera" android:required="false" />
+  <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+  <uses-feature android:name="android.hardware.telephony" android:required="false" />
+  <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+  <uses-feature android:name="android.hardware.wifi" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+  <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+  <application android:label="Sooq2Door" android:theme="@style/MainTheme" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true" android:extractNativeLibs="true">
+    <!-- Add your activities and other components here -->
     <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="Sooq2Door" android:theme="@style/MainTheme" android:name="crc640943e3135a24043a.MainActivity" android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -29,4 +38,6 @@
     <receiver android:enabled="true" android:exported="false" android:name="crc643f46942d9dd1fff9.PowerSaveModeBroadcastReceiver" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="1999999999" android:authorities="com.companyname.sooq2door.mono.MonoRuntimeProvider.__mono_init__" />
   </application>
+  <!-- Required permissions -->
+  <!-- Optional features to ensure broad compatibility -->
 </manifest>
