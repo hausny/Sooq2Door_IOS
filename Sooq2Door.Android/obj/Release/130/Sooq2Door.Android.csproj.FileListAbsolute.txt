@@ -427,8 +427,6 @@ D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Release\130\android\src\mono\
 D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Release\130\android\src\mono\com\google\android\material\navigation\NavigationBarView_OnItemSelectedListenerImplementor.java
 D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Release\130\android\src\mono\com\google\android\material\tabs\TabLayout_BaseOnTabSelectedListenerImplementor.java
 D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Release\130\android\src\mono\MonoPackageManager_Resources.java
-D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Release\130\aapt_rules.txt
-D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Release\130\android\manifest\aapt_rules.txt
 D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Release\130\android\bin\packaged_resources
 D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Release\130\android\src\com\companyname\sooq2door\R.java
 D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Release\130\android\compressed_assemblies.armeabi-v7a.ll
@@ -468,3 +466,6 @@ D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Release\130\stamp\_ConvertRes
 D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Release\130\stamp\_GenerateJavaStubs.stamp
 D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Release\130\stamp\_GeneratePackageManagerJava.stamp
 D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Release\130\stamp\_ResolveLibraryProjectImports.stamp
+D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Release\130\android\src\crc640943e3135a24043a\CustomWebViewRenderer.java
+D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Release\130\aapt_rules.txt
+D:\project vs 2023\Sooq2Door\Sooq2Door.Android\obj\Release\130\android\manifest\aapt_rules.txt
