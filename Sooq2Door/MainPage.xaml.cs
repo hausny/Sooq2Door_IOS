@@ -8,6 +8,13 @@ namespace Sooq2Door
 {
     public class CustomWebView : WebView
     {
+        public void GoBack()
+        {
+            var handler = GoBackRequested;
+            handler?.Invoke(this, EventArgs.Empty);
+        }
+
+        public event EventHandler GoBackRequested;
     }
     public partial class MainPage : ContentPage
     {
@@ -18,6 +25,7 @@ namespace Sooq2Door
         private string vegetablesUrl;
         private string fruitsUrl;
         private string cartUrl;
+        private string Leafyurl;
         private string HomeUrl;
 
         public MainPage()
@@ -37,6 +45,8 @@ namespace Sooq2Door
         {
             base.OnAppearing();
             UpdateToolbarLanguage(); // Update toolbar language on appearing
+            Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SetUseSafeArea(this, true);
+
         }
 
         private async void OnButtonClicked(object sender, EventArgs e)
@@ -52,6 +62,10 @@ namespace Sooq2Door
                 if (button == cartButton)
                 {
                     webView.Source = cartUrl;
+                }
+                if (button == leafyButton)
+                {
+                    webView.Source = Leafyurl;
                 }
                 else if (button == allProductsButton)
                 {
@@ -91,6 +105,7 @@ namespace Sooq2Door
                 vegetablesLabel.Text = "خضروات"; // Arabic for "Vegetables"
                 fruitsLabel.Text = "فواكه"; // Arabic for "Fruits"
                 backLabel.Text = "رجوع"; // Arabic for "Back"
+                LeafyLabel.Text = "ورقيات"; // Arabic for "Back"
                 homeLabel.Text = "الرئيسيه";
             }
             else
@@ -101,6 +116,7 @@ namespace Sooq2Door
                 vegetablesLabel.Text = "Vegetables";
                 fruitsLabel.Text = "Fruits";
                 backLabel.Text = "Back";
+                LeafyLabel.Text = "Leafy"; // Arabic for "Back"
                 homeLabel.Text = "Home";
             }
         }
@@ -116,7 +132,7 @@ namespace Sooq2Door
             if (!e.Url.Contains("sooq2door.com"))
             {
                 e.Cancel = true;
-                DisplayAlert("Error", "The requested URL is not allowed.", "OK");
+            //    DisplayAlert("Error", "The requested URL is not allowed.", "OK");
             }
             else
             {
@@ -128,10 +144,10 @@ namespace Sooq2Door
         {
             _isNavigating = false; // Reset the flag after navigation completes
 
-            if (e.Result == WebNavigationResult.Failure)
-            {
-                DisplayAlert("Error", "There was a problem loading the page. Sorry for the inconvenience.", "OK");
-            }
+            //if (e.Result == WebNavigationResult.Failure)
+            //{
+            //    DisplayAlert("Error", "There was a problem loading the page. Sorry for the inconvenience.", "OK");
+            //}
 
             // Detect if the URL has changed to Arabic or back to English
             if (e.Url.Contains("/ar"))
@@ -188,7 +204,30 @@ namespace Sooq2Door
 
         private void OnBackButtonClicked(object sender, EventArgs e)
         {
-            if (_navigationStack.Count > 1)
+            //if (_navigationStack.Count > 1)
+            //{.kk.,jkkllkjttwrsdZZXCGFU2QWAz
+            //    var customWebViewRenderer = Platform.GetRenderer(webView) as CustomWebViewRenderer;
+
+            //    // Call the back navigation method from the custom renderer
+            //    if (customWebViewRenderer != null)
+            //    {
+            //        customWebViewRenderer.HandleBackNavigation();
+            //    }
+            //    else
+            //    {
+            //        webView.GoBack();
+            //        _navigationStack.Pop(); // Remove the current page from stack after going back
+            //        UpdateButtonVisibility();
+            //    }
+            //}
+            if (Device.RuntimePlatform == Device.iOS)
+            {
+                // var customWebViewRenderer = Platform.GetRenderer(webView) as CustomWebViewRenderer;
+                webView.GoBack();
+                _navigationStack.Pop(); // Remove the current page from stack after going back
+                UpdateButtonVisibility();
+            }
+            else if (Device.RuntimePlatform == Device.Android)
             {
                 webView.GoBack();
                 _navigationStack.Pop(); // Remove the current page from stack after going back
@@ -212,6 +251,8 @@ namespace Sooq2Door
             vegetablesUrl = $"{baseUrl}/collections/veggie";
             fruitsUrl = $"{baseUrl}/collections/fruits";
             cartUrl = $"{baseUrl}/cart";
+            Leafyurl = $"{baseUrl}/collections/leafy";
+
             HomeUrl = $"{baseUrl}";
         }
         private void OnSwipeRight(object sender, SwipedEventArgs e)

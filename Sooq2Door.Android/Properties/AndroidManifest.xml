@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.companyname.sooq2door" android:versionCode="14" android:versionName="1.1" android:installLocation="auto">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.companyname.sooq2door" android:versionCode="16" android:versionName="1.1" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="34" />
 	<supports-screens android:resizeable="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
 	<application android:label="Sooq2Door" android:theme="@style/MainTheme">

@@ -34,5 +34,24 @@
     <string>Sooq2Door</string>
     <key>XSAppIconAssets</key>
     <string>Assets.xcassets/AppIcon.appiconset</string>
+
+    <!-- Added ATS exception for network access -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+
+    <!-- Permissions for WebView and related features -->
+    <key>NSCameraUsageDescription</key>
+    <string>This app requires access to the camera for certain functionalities.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>This app requires access to the microphone for certain functionalities.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app requires access to your location to provide better service.</string>
+
+    <!-- Privacy permissions for accessing photo library, if needed -->
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>This app requires access to your photo library to upload or select images.</string>
 </dict>
 </plist>
